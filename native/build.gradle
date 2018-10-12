@@ -1,0 +1,11 @@
+plugins {
+  id 'org.jetbrains.kotlin.konan' version '0.9.1'
+}
+
+konan.targets = [ 'linux' ]
+
+konanArtifacts {
+  program("vnkotlin") {
+    enableOptimizations(true)
+  }
+}
